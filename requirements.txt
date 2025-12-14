@@ -1,0 +1,4 @@
+deltabot-cli
+requests
+schedule
+py7zr
