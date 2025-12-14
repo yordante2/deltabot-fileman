@@ -9,14 +9,12 @@ import py7zr
 import schedule
 import threading
 from typing import Dict, List, Tuple
+import os
 
 cli = BotCli("download-bot")
 
-BASE_DIR = Path("/home/yordante/downbot")
+BASE_DIR = Path(os.getenv("BASE_DIR"))
 MAX_FILE_SIZE = 15728640
-PART_SIZE = 15728640
-SEND_INTERVAL = 30
-CLEANUP_INTERVAL = 7200
 
 stats = {
     "total_downloads": 0,
